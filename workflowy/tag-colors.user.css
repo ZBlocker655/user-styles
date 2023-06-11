@@ -26,6 +26,15 @@
     white-space: nowrap !important;
   }
 
+  [title*="@fup"] {
+    background-color: #f39822 !important;
+    border-radius: 3px 3px 3px 3px !important;
+    color: #000000 !important;
+    font-family: traveling _typewriter;
+    padding: 2px 3px 2px !important;
+    white-space: nowrap !important;
+  }
+
   [title*="#now-or-never"] {
     background-color: #FE2E2E !important;
     border-radius: 3px 3px 3px 3px !important;
@@ -34,5 +43,14 @@
     padding: 2px 3px 2px !important;
     white-space: nowrap !important;
     text-decoration: none;
+  }
+
+  [title*="@wip"] {
+    background-color: #ffff00 !important;
+    border-radius: 3px 3px 3px 3px !important;
+    color: #000000 !important;
+    font-family: traveling _typewriter;
+    padding: 2px 3px 2px !important;
+    white-space: nowrap !important;
   }
 }
