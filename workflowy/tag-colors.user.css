@@ -1,0 +1,38 @@
+/* ==UserStyle==
+@name        Workflowy Tag Colors
+@namespace   Zblocker655
+@version     1.0.0
+@homepageURL https://github.com/Zblocker655/user-styles
+@updateURL   https://raw.githubusercontent.com/zblocker655/user-styles/master/workflowy/tag-colors.user.css
+@license     MIT
+@author      Zach Blocker
+==/UserStyle== */
+@-moz-document domain("workflowy.com") {
+  [title*="@bm"] {
+    background-color: #9b2387 !important;
+    border-radius: 3px 3px 3px 3px !important;
+    color: #FFFFFF !important;
+    font-family: traveling _typewriter;
+    padding: 2px 3px 2px !important;
+    white-space: nowrap !important;
+  }
+
+  [title*="@dbtc"] {
+    background-color: #21be48 !important;
+    border-radius: 3px 3px 3px 3px !important;
+    color: #FFFFcc !important;
+    font-family: traveling _typewriter;
+    padding: 2px 3px 2px !important;
+    white-space: nowrap !important;
+  }
+
+  [title*="#now-or-never"] {
+    background-color: #FE2E2E !important;
+    border-radius: 3px 3px 3px 3px !important;
+    color: #FFFFFF !important;
+    font-family: traveling _typewriter;
+    padding: 2px 3px 2px !important;
+    white-space: nowrap !important;
+    text-decoration: none;
+  }
+}

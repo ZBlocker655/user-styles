@@ -1,0 +1,26 @@
+/* ==UserStyle==
+@name        Workflowy Basic Theme
+@namespace   Zblocker655
+@version     1.0.0
+@homepageURL https://github.com/Zblocker655/user-styles
+@updateURL   https://raw.githubusercontent.com/zblocker655/user-styles/master/workflowy/basic-theme.user.css
+@license     MIT
+@author      Zach Blocker
+==/UserStyle== */
+@-moz-document domain("workflowy.com") {
+  /* tag color */
+  .contentTag {
+    color: #F6CECE !important;
+  }
+
+  /* link styling */
+  .content .contentLink {
+    color: #59597F;
+    font-family: traveling _typewriter;
+  }
+
+  /* Global font styling */
+  .content {
+    font-family:  "Corbel";
+  }
+}

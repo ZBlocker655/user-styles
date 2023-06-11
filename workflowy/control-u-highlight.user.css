@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Workflowy Highlight with Control-U
+@namespace   Zblocker655
+@version     1.0.0
+@homepageURL https://github.com/Zblocker655/user-styles
+@updateURL   https://raw.githubusercontent.com/zblocker655/user-styles/master/workflowy/control-u-highlight.user.css
+@license     MIT
+@author      Zach Blocker
+==/UserStyle== */
+@-moz-document domain("workflowy.com") {
+  .content u {
+    background-color: #999900 !important;
+    text-decoration: none !important;
+  }
+}
