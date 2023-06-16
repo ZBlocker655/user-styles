@@ -15,7 +15,7 @@
   var customClasses = function(index, old){
     var classes = old.split(" ");
     var custom = [];
-    for( i = 0; i < classes.length; i++){
+    for(var i = 0; i < classes.length; i++){
       if(classes[i].endsWith("-proj")){ custom.push(classes[i]);}
     }
     return custom.join(" ");
