@@ -8,19 +8,20 @@
 @author      Zach Blocker
 ==/UserStyle== */
 @-moz-document domain("workflowy.com") {
-  /* tag color */
-  .contentTag {
-    color: #F6CECE !important;
-  }
-
-  /* link styling */
-  .content .contentLink {
-    color: #59597F;
-    font-family: traveling _typewriter;
-  }
-
-  /* Global font styling */
+  /* GLOBAL FONT STYLING */
   .content {
-    font-family:  "Corbel";
+    font-family: Monospace;
+  }
+
+  /* TAG COLOR */
+  .contentTag {
+    color: #0489B1 !important;
+    font-family: Courier;
+  }
+
+  /* LINK STYLING */
+  .content .contentLink {
+    color: #0489B1;
+    font-family: Courier;
   }
 }
