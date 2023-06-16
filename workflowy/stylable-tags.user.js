@@ -3,7 +3,7 @@
 // @description    Gives each tag it's own CSS style, so you can style them with CSS.
 // @author         LukeMT
 // @homepageURL    https://github.com/Zblocker655/user-styles
-// @updateURL      https://raw.githubusercontent.com/zblocker655/user-styles/master/workflowy/stylable-tags.user.js
+// @updateURL      https://raw.githubusercontent.com/zblocker655/user-styles/main/workflowy/stylable-tags.user.js
 // @include        http*://*workflowy.com/*
 // @version        1.1
 // ==/UserScript==
