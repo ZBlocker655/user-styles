@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Workflowy - 140 List Background Color
 @namespace   Zblocker655
-@version     1.1.0
+@version     1.1.1
 @homepageURL https://github.com/Zblocker655/user-styles
 @updateURL   https://raw.githubusercontent.com/zblocker655/user-styles/main/workflowy/list-bgcolor.user.css
 @author      Frank Degenaar
@@ -11,13 +11,13 @@
 
 /* 140+ BACKGROUND COLORS */
 
- :root {
+:root {
 	--circle-opacity-1: rgba(0,0,0,0.0);
 	--circle-opacity-2: rgba(0,0,0,0.0);
-    --circle-hover-color-1: rgba(255,255,255, 1);
+  --circle-hover-color-1: rgba(255,255,255, 1);
 	--circle-hover-color-2: rgba(0,0,0, 1.0);
-  --box-shadow-1: rgba(0, 0, 0, 0.8);
-  --box-shadow-2: rgba(0, 0, 0, 0.08);
+  --box-shadow-1: rgba(0, 0, 0, 0.18);
+  --box-shadow-2: rgba(0, 0, 0, 0.18);
 	--content: "◯";
 	--font-family: AvenirNext-UltraLight;
 }
