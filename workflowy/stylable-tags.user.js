@@ -9,28 +9,45 @@
 // ==/UserScript==
 (function() {
   'use strict';
-  String.prototype.endsWith = function(suffix) {
-      return this.indexOf(suffix, this.length - suffix.length) !== -1;
-  };
-  var customClasses = function(index, old){
-    var classes = old.split(" ");
+
+  // Helper function to check if a string ends with a given suffix
+  function endsWith(str, suffix) {
+    return str.indexOf(suffix, str.length - suffix.length) !== -1;
+  }
+
+  // Helper function to remove custom classes from an element
+  function removeCustomClasses(element) {
+    var classes = element.className.split(' ');
     var custom = [];
-    for(var i = 0; i < classes.length; i++){
-      if(classes[i].endsWith("-proj")){ custom.push(classes[i]);}
+    for (var i = 0; i < classes.length; i++) {
+      if (endsWith(classes[i], '-proj')) {
+        custom.push(classes[i]);
+      }
     }
-    return custom.join(" ");
-  };
+    element.className = custom.join(' ');
+  }
+
   var StylableTagsCounter = 1;
-  setInterval(function(){
-    StylableTagsCounter ++;
-    if( StylableTagsCounter >= 3){
-      $('.project').removeClass(customClasses);
-      $('.pageContainer').removeClass(customClasses);
+  setInterval(function() {
+    StylableTagsCounter++;
+    if (StylableTagsCounter >= 3) {
+      var projectElements = document.getElementsByClassName('project');
+      var pageContainerElements = document.getElementsByClassName('pageContainer');
+      for (var i = 0; i < projectElements.length; i++) {
+        removeCustomClasses(projectElements[i]);
+      }
+      for (var j = 0; j < pageContainerElements.length; j++) {
+        removeCustomClasses(pageContainerElements[j]);
+      }
       StylableTagsCounter = 0;
     }
-    $('span > .contentTagText').map( function(){
-      var x = $(this).text().toLowerCase();
-      $(this).closest('.project').addClass(x+"-proj");}
-    );
-  },10);
+    var contentTagTextElements = document.querySelectorAll('span > .contentTagText');
+    contentTagTextElements.forEach(function(element) {
+      var x = element.textContent.toLowerCase();
+      var projectElement = element.closest('.project');
+      if (projectElement) {
+        projectElement.className += ' ' + x + '-proj';
+      }
+    });
+  }, 10);
 })();
