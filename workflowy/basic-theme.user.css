@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Workflowy Basic Theme
 @namespace   Zblocker655
-@version     1.0.0
+@version     1.0.1
 @homepageURL https://github.com/Zblocker655/user-styles
 @updateURL   https://raw.githubusercontent.com/zblocker655/user-styles/main/workflowy/basic-theme.user.css
 @license     MIT
@@ -10,18 +10,18 @@
 @-moz-document domain("workflowy.com") {
   /* GLOBAL FONT STYLING */
   .content {
-    font-family: Monospace;
+    font-family: Cousine, Courier, monospace;
   }
 
   /* TAG COLOR */
   .contentTag {
     color: #0489B1 !important;
-    font-family: Courier;
+    font-family: Cousine, Courier, monospace;
   }
 
   /* LINK STYLING */
   .content .contentLink {
     color: #0489B1;
-    font-family: Courier;
+    font-family: Cousine, Courier, monospace;
   }
 }

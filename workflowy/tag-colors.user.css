@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Workflowy Tag Colors
 @namespace   Zblocker655
-@version     1.1.0
+@version     1.1.1
 @homepageURL https://github.com/Zblocker655/user-styles
 @updateURL   https://raw.githubusercontent.com/zblocker655/user-styles/main/workflowy/tag-colors.user.css
 @license     MIT
@@ -16,7 +16,7 @@
 
   [title*="@bm"] {
     background-color: #9b2387 !important;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 3px 10px 0 rgba(0, 0, 0, 0.18);
     border-radius: var(--tag-border-radius) !important;
     color: #FFFFFF !important;
     padding: var(--tag-padding-y) var(--tag-padding-x) !important;
@@ -25,7 +25,7 @@
 
   [title*="@dbtc"] {
     background-color: #21be48 !important;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07), 0 3px 10px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 3px 10px 0 rgba(0, 0, 0, 0.18);
     border-radius: var(--tag-border-radius) !important;
     color: #FFFFcc !important;
     padding: var(--tag-padding-y) var(--tag-padding-x) !important;
@@ -34,7 +34,7 @@
 
   [title*="@fup"] {
     background-color: #f39822 !important;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07), 0 3px 10px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 3px 10px 0 rgba(0, 0, 0, 0.18);
     border-radius: var(--tag-border-radius) !important;
     color: #000000 !important;
     padding: var(--tag-padding-y) var(--tag-padding-x) !important;
@@ -52,6 +52,15 @@
 
   [title*="@wip"] {
     background-color: #ffff00 !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07), 0 3px 10px 0 rgba(0, 0, 0, 0.07);
+    border-radius: var(--tag-border-radius) !important;
+    color: #000000 !important;
+    padding: var(--tag-padding-y) var(--tag-padding-x)!important;
+    white-space: nowrap !important;
+  }
+
+  [title*="@today"] {
+    background-color: #2ccbf3 !important;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07), 0 3px 10px 0 rgba(0, 0, 0, 0.07);
     border-radius: var(--tag-border-radius) !important;
     color: #000000 !important;
